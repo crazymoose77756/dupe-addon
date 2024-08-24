@@ -1,31 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "paper-dupe",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "Paper Dupe",
+  "description": "Makes Lefty's dupe a Meteor addon",
   "authors": [
-    "seasnail"
+    "crazymoose77756"
   ],
   "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "repo": "https://github.com/crazymoose77756/dupe-addon"
   },
-  "icon": "assets/template/icon.png",
+  "icon": "assets/paperdupe/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "com.crazymoose.paperdupe.Main"
     ]
   },
-  "mixins": [
-    "addon-template.mixins.json"
-  ],
   "custom": {
     "meteor-client:color": "225,25,25"
   },
   "depends": {
     "java": ">=21",
-    "minecraft": ["${mc_version}"],
+    "minecraft": ["${minecraft_version}"],
     "meteor-client": "*"
   }
 }
